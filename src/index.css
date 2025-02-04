@@ -1,0 +1,64 @@
+.movie:hover,
+.already-added:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.1);
+}
+
+.movie:hover {
+    border: 1px solid blue;
+}
+
+.already-added:hover {
+    border: 1px solid yellowgreen;
+}
+
+.movie {
+    transition: transform 0.3 ease;
+}
+
+.selected-movie {
+    background-color: blue;
+    color: #fff;
+    border: 1px solid black;
+    box-shadow: grey 0px 0px 10px 10px;
+
+}
+
+.selected-movie:hover {
+    border-color: black;
+    box-shadow: grey 0px 0px 10px 10px;
+
+}
+
+.already-added {
+    background-color: #b6b61d;
+    color: #fff;
+    border: 1px solid black;
+    box-shadow: grey 0px 0px 10px 10px;
+}
+
+.selected-already-movie {
+    background-color: #168503;
+    color: #fff;
+    border: 1px solid black;
+    box-shadow: grey 0px 0px 10px 10px;
+}
+
+.selected-already-movie>.in-list {
+    background-color: #17850397;
+    color: #fff;
+}
+
+.in-list {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #b6b61d67;
+    color: #fff;
+    backdrop-filter: blur(3px);
+    width: 100%;
+}
